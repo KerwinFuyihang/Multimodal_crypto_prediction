@@ -14,5 +14,17 @@ The crypto-related historical social media data are queried from Kaggle public d
 For the detailed information about this pre-trained model: please check https://huggingface.co/ElKulako/cryptobert
 
 ### Models
-Please check the folder
+Please check the **Models** folder.
 ### Results
+| Model       | Results (MAE) | Results (MAPE) | Modal Fusion           |
+|-------------|---------------|----------------|------------------------|
+| LSTM        | 837.6         | 0.0377         | Coin + News + Media   |
+|             | 1264.96       | 0.0545         | Coin + News            |
+|             | 997.65        | 0.0510         | Coin + Media           |
+| CNN-LSTM    | 908.86        | 0.0417         | Coin + News + Media   |
+|             | 1272.83       | 0.0594         | Coin + News            |
+|             | --            | --             | Coin + Media           |
+| TFT         | 4523.8740     | 0.1936         | Coin + News + Media   |
+|             | 5583.4273     | 0.2368         | Coin + News            |
+|             | 5521.1431     | 0.2262         | Coin + Media           |
+
