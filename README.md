@@ -10,7 +10,21 @@ The crypto-based data are queried by using [Cryptocompare API](https://min-api.c
 The crypto-related news data are queried from Nasdaq (One need to subscribe the data)
 
 The crypto-related historical social media data are queried from Kaggle public dataset [Kaggle](https://www.kaggle.com/datasets/kaushiksuresh147/bitcoin-tweets)
+
+#### Data Descriptor of Our Processed Dataset
+
+| Predictor       | Explanation                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------------------|
+| Opening price   | Price at which the Cryptocurrency began trading at the start of the given day.                |
+| Closing price   | Price at which the Cryptocurrency ended trading at the end of the given day.                  |
+| Highest/Lowest price | Highest/Lowest price at which the Cryptocurrency was traded on the given day.                 |
+| Volumefrom      | The quantity of shares bought by buyers on the given day.                                      |
+| Volumeto        | The quantity of shares sold by sellers on the given day.                                       |
+| News            | The predictor represented the result of the analysis of news contents on the given day.        |
+| Media           | The predictor represented the result of the sentiment analysis of social media contents on the given day. Positive Media index meant social media critics expected the price to rise. Negative Media index meant social media critics expected the price to drop. |
+
 ### CryptoBERT
+It was built by further training the vinai's bertweet-base language model on the cryptocurrency domain, using a corpus of over 3.2M unique cryptocurrency-related social media posts.
 For the detailed information about this pre-trained model: please check [CryptoBERT](https://huggingface.co/ElKulako/cryptobert)
 
 ### Models
